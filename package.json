@@ -5,11 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
+    "lint:vue": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",
-    "lint:js": "eslint src/**/*.js",
-    "lint:js:fix": "npm run lint:js -- --fix"
+    "lint:js": "eslint src/**/*.{js,vue}",
+    "lint:js:fix": "npm run lint:js -- --fix",
+    "lint:css": "stylelint src/**/*.vue --syntax scss"
   },
   "dependencies": {
     "core-js": "^2.6.5",
@@ -37,6 +38,9 @@
     "eslint-plugin-vue": "^5.2.3",
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
+    "stylelint": "^11.1.1",
+    "stylelint-config-standard": "^19.0.0",
+    "stylelint-processor-html": "^1.0.0",
     "vue-template-compiler": "^2.6.10"
   }
 }
