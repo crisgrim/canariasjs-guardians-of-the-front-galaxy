@@ -4,14 +4,11 @@
         "es6": true
     },
     "extends": "standard",
+    "parser": "babel-eslint",
     "rules": {
         "semi": [
             "error",
             "always"
-        ],
-        "quotes": [
-            "error",
-            "double"
         ]
     },
     "globals": {
