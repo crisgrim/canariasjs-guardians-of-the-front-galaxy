@@ -8,13 +8,13 @@
     "lint:vue": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",
-    "lint:js": "eslint src/**/*.{js,vue}",
-    "lint:js:fix": "npm run lint:js -- --fix",
-    "lint:css": "stylelint src/**/*.vue --syntax scss"
+    "lint:js": "eslint src/*.{js,vue}",
+    "lint:js:fix": "npm run lint:js --fix",
+    "lint:css": "stylelint src/*.vue",
+    "lint:css:fix": "stylelint src/*.vue --fix"
   },
   "dependencies": {
     "core-js": "^2.6.5",
-    "stylelint-processor-html": "^1.0.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
@@ -51,8 +51,9 @@
     }
   },
   "lint-staged": {
-    "src/**/*.vue": [
+    "src/*.{js,vue}": [
       "npm run lint:js:fix",
+      "npm run lint:css:fix",
       "git add"
     ]
   }
