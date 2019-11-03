@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GamesList.spec.js has the expected html structure 1`] = `
+<ul>
+  <li
+    class="game"
+  >
+    <img
+      src="https://static.promodescuentos.com/pepperpdimages/threads/thread_large/default/251090_1.jpg"
+    />
+     
+    <div
+      class="content"
+    >
+      <h2>
+        God of war, 2018
+      </h2>
+       
+      <h3>
+        Published: 1/11/2018
+      </h3>
+       
+      <p>
+        
+      Started:
+      
+        <i
+          class="fas fa-times"
+        />
+        
+      Ended:
+      
+        <i
+          class="fas fa-times"
+        />
+      </p>
+       
+      <p>
+        Percentage 0
+      </p>
+       
+      <p>
+        Estimated 20
+      </p>
+       
+      <p>
+        Score 8 - Hype 10
+      </p>
+       
+      <div
+        class="categories"
+      >
+        <p>
+          
+        Adventure
+      
+        </p>
+        <p>
+          
+        Vikings
+      
+        </p>
+        <p>
+          
+        One Player
+      
+        </p>
+      </div>
+    </div>
+  </li>
+</ul>
+`;

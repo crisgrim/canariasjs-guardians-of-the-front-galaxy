@@ -5,6 +5,7 @@ module.exports = {
     'json',
     'vue'
   ],
+  watchman: false,
   transform: {
     '^.+\\.vue$': 'vue-jest',
     '.+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$': 'jest-transform-stub',
@@ -26,5 +27,20 @@ module.exports = {
   watchPlugins: [
     'jest-watch-typeahead/filename',
     'jest-watch-typeahead/testname'
+  ],
+  collectCoverage: true,
+  collectCoverageFrom: [
+    '<rootDir>/src/views/**',
+    '<rootDir>/src/utils/**',
+    '<rootDir>/src/components/**'
+  ],
+  coverageThreshold: {
+    global: {
+      lines: 50
+    }
+  },
+  coverageReporters: [
+    'text',
+    'html'
   ]
 };

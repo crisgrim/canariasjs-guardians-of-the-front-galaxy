@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home.spec.js has the expected html structure 1`] = `
+<div
+  class="home"
+>
+  <h1>
+    My 
+    <strong>
+      Videogames
+    </strong>
+     List
+  </h1>
+   
+  <gameslist-stub
+    games="[object Object]"
+  />
+</div>
+`;
