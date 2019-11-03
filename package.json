@@ -7,10 +7,10 @@
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
-    "lint:css": "stylelint src/*.vue",
-    "lint:css:fix": "stylelint src/*.vue --fix",
-    "lint:js": "eslint src/*.{js,vue}",
-    "lint:js:fix": "npm run lint:js --fix",
+    "lint:css": "stylelint src/**/*.vue",
+    "lint:css:fix": "stylelint src/**/*.vue --fix",
+    "lint:js": "eslint src/**/*.{js,vue}",
+    "lint:js:fix": "eslint src/**/*.{js,vue} --fix",
     "lint:vue": "vue-cli-service lint",
     "test": "jest",
     "test:coverage": "jest --coverage"
@@ -54,7 +54,7 @@
     }
   },
   "lint-staged": {
-    "src/*.{js,vue}": [
+    "src/**/*.{js,vue}": [
       "npm run lint:js:fix",
       "npm run lint:css:fix",
       "git add"

@@ -15,24 +15,24 @@ import Game from '@/components/Game.vue';
 export default {
   name: 'GameList',
   components: {
-    Game,
+    Game
   },
   props: {
     games: {
       type: Array,
-      required: true,
-    },
+      required: true
+    }
   },
   methods: {
-    handleGameClick() {
+    handleGameClick () {
       // Do something
-    },
+    }
     /*
     handleGameClick(game) {
       console.log(game);
     },
     */
-  },
+  }
 };
 </script>
 
