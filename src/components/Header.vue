@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'Header',
+  name: 'Header'
 };
 </script>
 
@@ -25,7 +25,7 @@ export default {
 }
 
 .nav a {
-  color: #ffffff;
+  color: #fff;
   padding-right: 10px;
   text-decoration: none;
 }

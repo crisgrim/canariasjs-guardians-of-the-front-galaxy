@@ -11,9 +11,9 @@ import GamesList from '@/components/GamesList.vue';
 export default {
   name: 'Home',
   components: {
-    GamesList,
+    GamesList
   },
-  data() {
+  data () {
     return {
       games: [
         {
@@ -28,7 +28,7 @@ export default {
           score: 8,
           hype: 10,
           categories: ['Adventure', 'Vikings', 'One Player'],
-          image: 'https://static.promodescuentos.com/pepperpdimages/threads/thread_large/default/251090_1.jpg',
+          image: 'https://static.promodescuentos.com/pepperpdimages/threads/thread_large/default/251090_1.jpg'
         },
         {
           id: 1,
@@ -42,7 +42,7 @@ export default {
           score: 9,
           hype: 10,
           categories: ['Open World', 'Rol', 'One Player'],
-          image: 'https://lyricstranslate.com/files/styles/large/public/DVZUGpO.jpg',
+          image: 'https://lyricstranslate.com/files/styles/large/public/DVZUGpO.jpg'
         },
         {
           id: 2,
@@ -56,7 +56,7 @@ export default {
           score: 7,
           hype: 7,
           categories: ['Adventure', 'One Player'],
-          image: 'https://i11c.3djuegos.com/juegos/10125/proyecto_ninja_theory__nombre_temporal_/fotos/analisis/proyecto_ninja_theory__nombre_temporal_-4006254.jpg',
+          image: 'https://i11c.3djuegos.com/juegos/10125/proyecto_ninja_theory__nombre_temporal_/fotos/analisis/proyecto_ninja_theory__nombre_temporal_-4006254.jpg'
         },
         {
           id: 3,
@@ -70,10 +70,10 @@ export default {
           score: 8,
           hype: 10,
           categories: ['Rol', 'One Player'],
-          image: 'https://www.clavecd.es/wp-content/uploads/buy-the-elder-scrolls-5-skyrim-cd-key-pc-download-img1.jpg',
-        },
-      ],
-    }
+          image: 'https://www.clavecd.es/wp-content/uploads/buy-the-elder-scrolls-5-skyrim-cd-key-pc-download-img1.jpg'
+        }
+      ]
+    };
   }
-}
+};
 </script>

@@ -41,23 +41,23 @@ export default {
   props: {
     game: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   computed: {
-    formatPublishDate() {
+    formatPublishDate () {
       return formatDate(this.game.publish);
-    },
+    }
   },
   methods: {
-    handleClick() {
+    handleClick () {
       this.$emit('game-clicked', this.game);
     },
-    icon(isDone) {
+    icon (isDone) {
       const icon = isDone ? 'check' : 'times';
       return `<i class="fas fa-${icon}"></i>`;
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -74,13 +74,13 @@ li {
   display: flex;
   flex-direction: row;
   font-size: 13px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .categories p {
-    padding: 0px 15px;
-    margin: 2px;
-    background-color: black;
+  padding: 0 15px;
+  margin: 2px;
+  background-color: black;
 }
 
 h2 {
