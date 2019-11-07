@@ -51,6 +51,7 @@ export default {
   },
   methods: {
     handleClick () {
+      // Emit game clicked event
       this.$emit('game-clicked', this.game);
     },
     icon (isDone) {
