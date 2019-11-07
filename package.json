@@ -12,6 +12,7 @@
     "lint:js": "eslint src/**/*.{js,vue}",
     "lint:js:fix": "eslint src/**/*.{js,vue} --fix",
     "lint:vue": "vue-cli-service lint",
+    "lint:fix": "npm run lint:js:fix && npm run lint:css:fix",
     "test": "jest",
     "test:coverage": "jest --coverage"
   },
@@ -55,8 +56,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,vue}": [
-      "npm run lint:js:fix",
-      "npm run lint:css:fix",
+      "npm run lint:fix",
       "git add"
     ]
   }
