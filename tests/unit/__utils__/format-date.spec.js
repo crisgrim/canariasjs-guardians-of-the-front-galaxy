@@ -1,4 +1,4 @@
-import formatDate from '../../../src/utils/format-date';
+import formatDate from '@/utils/format-date';
 
 describe('Tests Helper format-date.js', () => {
   it('Should get a formated date', () => {

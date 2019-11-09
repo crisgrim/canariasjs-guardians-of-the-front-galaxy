@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import Game from '../../src/components/Game';
+import Game from '@/components/Game';
 
 const createCmp = propsData => mount(Game, { propsData });
 

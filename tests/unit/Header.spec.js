@@ -1,5 +1,5 @@
 import { shallowMount, RouterLinkStub } from '@vue/test-utils';
-import Header from '../../src/components/Header.vue';
+import Header from '@/components/Header.vue';
 
 describe('Header.spec.js', () => {
   const cmp = shallowMount(Header, {

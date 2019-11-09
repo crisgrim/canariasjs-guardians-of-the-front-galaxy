@@ -1,6 +1,6 @@
 import { mount } from '@vue/test-utils';
-import GamesList from '../../src/components/GamesList';
-import Game from '../../src/components/Game';
+import GamesList from '@/components/GamesList';
+import Game from '@/components/Game';
 
 describe('GamesList.spec.js', () => {
   const games = [{
