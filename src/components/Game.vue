@@ -53,10 +53,6 @@ export default {
     handleClick () {
       // Emit game clicked event
       this.$emit('game-clicked', this.game);
-    },
-    icon (isDone) {
-      const icon = isDone ? 'check' : 'times';
-      return `<i class="fas fa-${icon}"></i>`;
     }
   }
 };
